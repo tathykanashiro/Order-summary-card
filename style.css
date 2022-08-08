@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+:root {
+    --Paleblue: hsl(225, 100%, 94%);
+    --Brightblue: hsl(245, 75%, 52%);
+    --Verypaleblue: hsl(225, 100%, 98%);
+    --Desaturatedblue: hsl(224, 23%, 55%);
+    --Darkblue: hsl(223, 47%, 23%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Red Hat Display', sans-serif;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    background-color: var(--Verypaleblue);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+}
+
+.container {
+    max-width: 416px;
+    background: #fff;
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px, rgba(17, 17, 26, 0.1) 0px 24px 80px;
+    border-radius: 1rem;
+}
+
+main img {
+    width: 100%;
+    border-radius: 1rem 1rem 0 0;
+}
+
+main section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 2rem;
+    height: 100%;
+    width: 100%;
+}
+
+main section h1 {
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    color: var(--Darkblue);
+    font-weight: 900;
+}
+
+main section span {
+    text-align: center;
+    color: var(--Desaturatedblue);
+    line-height: 1.4em;
+}
+
+main img {
+    width: 100%;
+    border-radius: 1rem 1rem 0 0;
+}
+
+main div.plan__information {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    background: var(--Verypaleblue);
+    border-radius: 0.8rem;
+    padding: 1.5rem 1rem;
+    margin: 1rem 0;
+}
+
+main .plan__information .music__price {
+    display: flex;
+    align-items: center;
+}
+
+main .plan__information .price {
+    display: flex;
+    flex-direction: column;
+}
+
+main .plan__information img {
+    width: 48px;
+    margin-right: 1rem;
+}
+
+main .plan__information a {
+    color: var(--Brightblue);
+    font-weight: 600;
+    font-size: 90%;
+    transition: 0.3s;
+}
+
+main .plan__information a:hover {
+    color: var(--Desaturatedblue);
+    text-decoration: none;
+}
+
+main button {
+    width: 100%;
+    cursor: pointer;
+    color: #fff;
+    font-weight: 700;
+    background: var(--Brightblue);
+    padding: 1rem;
+    margin: 1rem;
+    border-radius: 0.8rem;
+    border: none;
+    box-shadow: 0px 15px 24px  rgba(1, 1, 90, 0.3);
+    transition: 0.3s;
+}
+
+button:hover {
+    opacity: .8;
+}
+
+#cancel__order {
+    text-decoration: none;
+    color: var(--Desaturatedblue);
+    font-weight: 600;
+    font-size: 0.9rem;
+    margin-bottom: 2.5rem;
+    transition: color 0.3s;
+}
+
+#cancel__order:hover {
+    color: var(--Darkblue);
+}
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
